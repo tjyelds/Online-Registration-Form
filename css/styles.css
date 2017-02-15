@@ -1,0 +1,229 @@
+* {
+	box-sizing : border-box;
+}
+
+/************************************
+	GENERAL
+************************************/
+
+body {
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	color: #a5a5a5;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+hr {
+	border-top: 1px solid #2d3945;
+}
+
+.two-lines {
+	border-top: 2px solid #2d3945;
+	border-bottom: 1px solid #2d3945;
+	height: 4px;
+}
+
+/************************************
+	TEXT
+************************************/
+
+h1, h2, legend {
+	font-family: 'Abril Fatface', cursive;
+	margin: 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+h2 {
+	color: #2d3945;
+	margin-bottom: 10px;
+}
+
+p, 
+label {
+	margin: 0;
+}
+
+/************************************
+	BODY
+************************************/
+
+header {
+	background-color: #2d3945;
+	padding: 20px 0;
+}
+
+section {
+	padding: 20px 0;
+}
+
+.title {
+	text-align: center;
+}
+
+.copyright {
+	font-style: italic;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+/************************************
+	FORM STYLES
+************************************/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	background-color: #eff0f1;
+	color: #333;
+	border: none;
+	padding: 20px;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #eff0f1;
+	-moz-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	-webkit-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input:invalid:focus {
+	background-color: #e2e4e5;
+	outline: none;
+	border: 1px solid #2d3945;
+}
+
+select {
+	height: 50px;
+	text-size: 1em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 10px 5px 10px 0;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+	font-weight: bold;
+}
+
+.required::after {
+	content: ' *';
+	color: #d71920;
+}
+
+input:invalid {
+	border-color: #fbe8e8;
+	background-color: #fbe8e8;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+	margin: 20px 0;
+}
+
+legend ~ p {
+	margin-bottom: 10px;
+}
+
+label ~ p {
+	margin-top: 20px;
+}
+
+legend {
+	color: #2d3945;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+button {
+	padding: 20px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	background-color: #4ebbb5;
+	text-align: center;
+	border-radius: 5px;
+	width: 100%;
+	border: none;
+	margin: 20px 0;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: .9;
+}
+
+#postcode {
+	display: block;
+	width: 30%;
+}
+
+/* WebKit browsers */
+::-webkit-input-placeholder { 
+	text-align: right;
+	font-style: italic;
+}
+/* Mozilla Firefox */
+:-moz-placeholder { 
+	text-align: right;
+   	font-style: italic;
+}
+/* Internet Explorer 10+ */
+:-ms-input-placeholder { 
+	text-align: right;
+	font-style: italic;
+}
+
+
+/************************************
+	MEDIA QUERIES
+************************************/
+
+@media (min-width: 768px) {
+	
+	.container {
+		width: 70%;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		width: 80%;
+	}
+	
+	#top-fieldset label { 
+		display: inline-block;
+		width: 20%; 
+		float: left;
+	}
+	
+	legend ~ label {
+		margin-top: 20px;
+	}
+}
