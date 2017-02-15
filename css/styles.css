@@ -114,7 +114,7 @@ input:invalid:focus {
 
 select {
 	height: 50px;
-	text-size: 1em;
+	font-size: 1em;
 }
 
 input[type="checkbox"],
