@@ -90,6 +90,8 @@ textarea,
 select {
 	background-color: #eff0f1;
 	color: #333;
+	font-size: 1em;
+	font-family: inherit;
 	border: none;
 	padding: 20px;
 	width: 100%;
@@ -115,6 +117,7 @@ input:invalid:focus {
 select {
 	height: 50px;
 	font-size: 1em;
+	padding: 0; /* Mozilla Fix */
 }
 
 input[type="checkbox"],
@@ -185,16 +188,26 @@ button:hover {
 ::-webkit-input-placeholder { 
 	text-align: right;
 	font-style: italic;
+	font-size: 0.8rem;
+	padding-right: .1em;
 }
-/* Mozilla Firefox */
+/* Mozilla Firefox 19+ */
+::-moz-placeholder { 
+	text-align: right;
+   	font-style: italic;
+	font-size: 0.8rem;
+}
+/* Firefox -18 */
 :-moz-placeholder { 
 	text-align: right;
    	font-style: italic;
+	font-size: 0.8rem;
 }
 /* Internet Explorer 10+ */
-:-ms-input-placeholder { 
+::-ms-input-placeholder { 
 	text-align: right;
 	font-style: italic;
+	font-size: 0.8rem;
 }
 
 
